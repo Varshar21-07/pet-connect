@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breed and Medication Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Pet Connect</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="add-pet.html">Add Pet</a>
+            <a href="adoption-form.html">Adopt a Pet</a>
+            <a href="breed-info.html">help kit</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Breed and Medication Details</h1>
+
+        <section>
+            <h2>Add New Breed Information</h2>
+            <form id="add-breed-form">
+                <label for="breed-name">Breed Name:</label>
+                <input type="text" id="breed-name" required>
+
+                <label for="breed-type">Type:</label>
+                <select id="breed-type" required>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                </select>
+
+                <label for="breed-medication">Medication:</label>
+                <textarea id="breed-medication" required></textarea>
+
+                <label for="breed-special-care">Special Care:</label>
+                <textarea id="breed-special-care" required></textarea>
+
+                <button type="submit">Add Breed</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Existing Breed Information</h2>
+            <div id="breed-list">
+                <!-- Breed details will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pet Adoption Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
